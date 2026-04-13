@@ -1,0 +1,6 @@
+torch>=2.0
+gpytorch>=1.11
+simple-parsing>=0.1.0
+bed-reader>=0.2.0
+numpy
+pandas

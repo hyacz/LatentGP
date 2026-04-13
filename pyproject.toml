@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latentgp"
+version = "0.3.0"
+description = "A Latent Gaussian Process Framework for Genomic Prediction"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "LatentGP Authors" },
+]
+keywords = ["genomic-prediction", "gaussian-process", "gblup", "genomic-selection", "genetics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "torch>=2.0",
+    "gpytorch>=1.11",
+    "simple-parsing>=0.1.0",
+    "bed-reader>=0.2.0",
+    "numpy",
+    "pandas",
+]
+
+[project.urls]
+Repository = "https://github.com/hyacz/LatentGP"
+
+[tool.setuptools]
+py-modules = ["main", "config", "data", "kernel", "model", "simulator"]

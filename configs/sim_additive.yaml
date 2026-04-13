@@ -1,0 +1,31 @@
+# LatentGP Example: Simulated data with additive encoding
+# Useful for benchmarking and method validation.
+
+data:
+  bed_path: "path/to/genotypes.bed"
+  mode: "sim"
+  test_ratio: 0.2
+  metric: "corr"
+  sim:
+    h2: 0.5
+    num_qtls: 1000
+    dominance: 0.0
+
+model:
+  method: "add"
+
+train:
+  h2_init: 0.5
+  lr: 0.1
+  epochs: 50
+  eval_step: 1
+  patience: 0
+  tolerance: 1.0e-5
+
+sys:
+  device: "cuda:0"
+  seed: 42
+  snp_batch_size: 100000
+  sample_block_size: 10000
+  enable_float64: true
+  num_threads: 16

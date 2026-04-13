@@ -1,0 +1,30 @@
+# LatentGP Example: Real data with additive + learnable combined encoding
+# Combines fixed additive GBLUP kernel with a learnable residual kernel.
+
+data:
+  bed_path: "path/to/genotypes.bed"
+  mode: "real"
+  test_ratio: 0.2
+  phe_path: "path/to/phenotypes.txt"
+  phe_col: "trait_name"
+  fold_col: "trait_name_1"
+  metric: "corr"
+
+model:
+  method: "add+lrn"
+
+train:
+  h2_init: 0.5
+  lr: 0.1
+  epochs: 50
+  eval_step: 1
+  patience: 0
+  tolerance: 1.0e-5
+
+sys:
+  device: "cuda:0"
+  seed: 42
+  snp_batch_size: 100000
+  sample_block_size: 10000
+  enable_float64: true
+  num_threads: 16
