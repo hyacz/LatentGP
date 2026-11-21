@@ -118,13 +118,11 @@ If you use LatentGP in your research, please cite:
 
 ```bibtex
 @article{latentgp2026,
-  title={LatentGP: Uncovering Global Gene Action Patterns via Learnable Genotype Encoding},
-  author={},
-  journal={},
+  title={Uncovering global gene action patterns via learnable genotype encoding},
+  author={Zhang, Haohao and Tang, Zhenshuang and Lai, Chunxiao and Peng, Jing and Fu, Yuhua and Xiong, Xiong and Zhou, Xiang and Cheng, Chong and Yin, Lilin and Yuan, Xiaohui},
+  journal={Science China Life Sciences},
   year={2026},
-  volume={},
-  pages={},
-  doi={}
+  doi={10.1007/s11427-026-3526-3}
 }
 ```
 
